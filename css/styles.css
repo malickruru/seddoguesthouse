@@ -1,0 +1,181 @@
+@import url('hero.css');
+@import url('bugerMenu.css');
+@import url('slidersection.css');
+@import url('Service.css');
+@import url('formSection.css');
+@import url('footer.css');
+@import url('booking.css');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto sans';
+    box-sizing: border-box !important;
+    /* overflow-x: hidden; */
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.serifFont{
+    font-family: 'Cormorant Garamond';
+}
+
+.fullWidth{
+    /* width: 99vw; */
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+main{
+    min-height: 200vh;
+    background-color: #fff;
+    padding: 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;  
+    flex-direction: column;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+/* flex */
+.flex-spaceAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-spaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-a-center{
+    display: flex;
+    align-items: center;
+}
+
+.flex-columnDirection{
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+}
+
+/* margin,size, padding ect... */
+.mx-10{
+    margin: 0 10px;
+}
+
+.my-30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+.w-80{
+    width: 80%;
+}
+
+/* Other */
+
+.separator{
+    display: block;
+    height: 30px;
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 10px;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+.hoverEffect{
+   transition: all 0.3s ease-out;
+   cursor: pointer;
+}
+
+.hoverEffect:hover{
+    color: #FF004D;
+
+}
+
+.hoverUnderline{
+    position: relative;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+.hoverUnderline:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .hoverUnderline:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  .motif{
+    width: 75px;
+  }
+
+  .btn-primary{
+    background-color: #FF004D;
+    color: #fff;
+    padding: 5px 15px ;
+    border-radius:5px ;
+    margin: 0;
+    border: none;
+    cursor: pointer; 
+    text-transform: uppercase;
+}
+
+.btn-primary:hover{
+    background-color: #b80037;
+}
+
+.icon {
+    display: inline;
+    max-width: 2em;
+    max-height: 2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }

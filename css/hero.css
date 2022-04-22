@@ -1,0 +1,104 @@
+.HeroBg{
+    background-image: url('./image/herobg.jpg') ;
+    background-size: cover ;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.HeroBgFilter{
+    background-color: rgba(0, 0, 0, 0.603);
+    /* opacity: 0.5; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+
+}
+
+.HeroHeader-ul{
+    width: 60%;
+    list-style: none;
+    margin: 25px auto;
+}
+
+.HeroContainer{
+    z-index: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.HeroForm{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.800);
+    color: black;
+    width: 70%;
+    margin:  auto;
+    padding: 10px 0px;
+   
+    
+}
+
+.HeroForm-input{
+    padding: 10px;
+}
+.HeroForm-input>p{
+    font-size: 15px;
+    color: gray;
+    margin: 3px 0;
+}
+
+.HeroForm-input-header>i{
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+.HeroForm-input-header>h4{
+    margin: 0;
+}
+
+.HeroForm-input-header{
+    align-items: center;
+}
+
+.border-left{
+    border-left: 1px gray solid;
+}
+
+.HeroLogo{
+    display: none;
+}
+
+.pageTitle{
+    margin: 80px 0;
+    text-align: center;
+}
+
+/* 768px */
+
+@media screen and (max-width:768px) {
+    .HeroHeader{
+        display: none !important;
+    }
+
+    .HeroHeader-ul{
+        display: none !important
+    }
+
+    .HeroForm{
+        flex-direction: column;
+    }
+
+    .HeroForm-input.border-left{
+        border-left: 0px solid;
+    }
+
+    .HeroLogo{
+        display: block;
+        margin: auto;
+    }
+
+    
+}

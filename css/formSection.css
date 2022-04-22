@@ -1,0 +1,88 @@
+.formSection>div{
+    width: 50%;
+    height: 100%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.ContactImg > img{
+width: 80%;
+margin: auto;
+}
+
+.ContactImg{
+    overflow: hidden;
+    max-height: 600px;
+}
+
+.ContactForm{
+    padding: 5px 30px;
+    box-sizing: border-box;
+}
+
+.ContactForm>div{
+    width: 100%;
+}
+
+.ContactForm>div>input[type = "text"]{
+    border: 1px rgb(175, 175, 175) solid;
+    outline: none;
+    padding: 15px;
+    min-width: 40%;
+    margin: 10px 1px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    font-family: 'Noto sans';
+}
+
+.ContactForm>div>textarea{
+    border: 1px rgb(175, 175, 175) solid;
+    outline: none;
+    padding: 15px;
+    min-width: 88%;
+    height: 150px;
+    margin: 10px 1px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    font-family: 'Noto sans';
+    resize: none;
+}
+
+.ContactForm>div>input[type = "checkbox"]{
+-webkit-appearance: none;
+appearance: none;
+font: inherit;
+color: currentColor;
+width: 1.15em;
+height: 1.15em;
+border: 0.15em solid currentColor;
+border-radius: 0.15em;
+cursor: pointer;
+margin: 0 10px 0 0;
+}
+
+.ContactForm>div>input[type = "checkbox"]:checked{
+    background-color: #FF004D;
+}
+
+@media screen and (max-width : 768px) {
+    .formSection{
+        flex-direction: column; 
+    }
+
+    .formSection>div{
+        width: 100%;
+        height: auto;
+    }
+
+    .map{
+        overflow: hidden;
+    }
+
+    .contact{
+        text-align: center;
+    }
+}

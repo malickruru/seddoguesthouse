@@ -1,0 +1,67 @@
+.service{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.serviceImg{
+    width: 50%;
+    height: 300px;
+    background-size: cover;
+}
+
+.serviceText{
+    background-color: #F0F0F0;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.serviceImg[data-img="chambre"]{
+    background-image: url('image/appart.jpg');
+    background-position: 0% 50%;
+}
+
+.serviceImg[data-img="restau"]{
+    background-image: url('image/restau.jpg');
+}
+.serviceImg[data-img="bar"]{
+    background-image: url('image/bar.jpg');
+}
+
+.btn{
+    background-color: #fff ;
+    color: #FF004D  ;
+    border: 3px solid #FF004D  ;
+    border-radius: 50%  ; 
+    padding: 0  ;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    font-size: 1.5em;
+}
+
+.btn:hover{
+    width: 35px;
+    height: 35px;
+    /* font-size: 1.3em; */
+}
+
+@media screen and (max-width:768px) {
+    .serviceImg{
+        display:none
+    }
+
+    .serviceText {
+        width : 100%;
+        margin : 10px 0;
+    }
+}
