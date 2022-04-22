@@ -8,8 +8,13 @@ displayPage(1);
 //tri
 
 //tri en fonction des prix
+document.getElementById('rangePrice').addEventListener('input',()=>{
+document.getElementById('rangePrice').style.backgroundSize = (document.getElementById('rangePrice').value - 0) * 100 / (4000 - 0) + '% 100%';
+})
+
+
 document.getElementById('rangePrice').addEventListener('change', ()=>{
-    document.getElementById('priceValue').innerHTML= "$"+ document.getElementById('rangePrice').value;
+    document.getElementById('priceValue').innerHTML=  document.getElementById('rangePrice').value + "€";
     sortPrice(VILLA);
 })
 

@@ -52,50 +52,71 @@
     </div>
 
     <!-- main -->
+    
     <main>
-        <div class="grid_1">
-            <div class="tri">
-                <div class="flex">
-                    <label for="rangePrice">
-                        <b>Prix maximal : </b>
-                    </label>
-                    <div id="priceValue">
-                        $ 4000
+        <div class="w-80" style="text-align: left;"> Accueil > Nos offres</div>
+        <div class="w-80 mt-30">
+            <div class="grid_1">
+                <div class="tri">
+                    <div class="filtrer">
+                        FILTRER :
                     </div>
+                    <div class="w-80 flex mt-30 flex-spaceAround">
+                        <label for="rangePrice">
+                            <b>Prix maximal : </b>
+                        </label>
+                        <div id="priceValue">
+                             4000 €
+                        </div>
+                        
+                    </div>
+                    <input type="range" min="0" max="4000" step="100" id="rangePrice" value="4000"> <br>
+                    <span class="separator-filtre"></span>
+                    <label for="rangePrice"> 
+                        <b>Equipement : </b>
+                    </label>
+                    <div></div>
+                    <div>
+                        <svg class="icon icon-elevator">
+                            <path d="M18.984 3h-13.969q-0.844 0-1.43 0.586t-0.586 1.43v13.969q0 0.844 0.586 1.43t1.43 0.586h13.969q0.844 0 1.43-0.586t0.586-1.43v-13.969q0-0.844-0.586-1.43t-1.43-0.586zM8.484 6q0.516 0 0.891 0.375t0.375 0.891-0.375 0.867-0.891 0.352-0.867-0.352-0.352-0.867 0.352-0.891 0.867-0.375zM11.016 14.016h-1.031v3.984h-3v-3.984h-0.984v-2.531q0-0.797 0.586-1.383t1.43-0.586h0.984q0.844 0 1.43 0.586t0.586 1.383v2.531zM15.516 17.016l-2.531-4.031h5.016zM12.984 11.016l2.531-4.031 2.484 4.031h-5.016z"></path>
+                        </svg>
+                        <i class="bi bi-wifi"></i>
+                        
+                    </div>
+
+
+                    <label for="rangePrice"> 
+                        <b>Service : </b>
+                    </label>
+                    <div class="flex">
+                        <input type="checkbox"  class="Service_checkbox" value="restaurant"> <p>Restaurant</p>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox"  class="Service_checkbox" value="bar"> <p>Bar</p>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox"  class="Service_checkbox" value="logement" checked> <p>Logement</p>
+                    </div>
+    
+                    <p>NOTE :</p>
+                    <div class="flex">
+                        <i class="fa fa-star starChecked star" data-index="1"></i> 
+                        <i class="fa fa-star starChecked star" data-index="2"></i>
+                        <i class="fa fa-star starChecked star" data-index="3"></i>
+                        <i class="fa fa-star-o  star" data-index="4"></i>
+                        <i class="fa fa-star-o star " data-index="5"></i>
+                    </div>
+                </div>
+                <div id="Offres" class="Offres">
                     
                 </div>
-                <input type="range" min="0" max="4000" step="100" id="rangePrice" value="4000"> <br>
-
-                <label for="rangePrice"> 
-                    <b>Service : </b>
-                </label>
-                <div class="flex">
-                    <input type="checkbox"  class="Service_checkbox" value="restaurant"> <p>Restaurant</p>
-                </div>
-                <div class="flex">
-                    <input type="checkbox"  class="Service_checkbox" value="bar"> <p>Bar</p>
-                </div>
-                <div class="flex">
-                    <input type="checkbox"  class="Service_checkbox" value="logement" checked> <p>Logement</p>
-                </div>
-
-                <p>NOTE :</p>
-                <div class="flex">
-                    <i class="fa fa-star starChecked star" data-index="1"></i> 
-                    <i class="fa fa-star starChecked star" data-index="2"></i>
-                    <i class="fa fa-star starChecked star" data-index="3"></i>
-                    <i class="fa fa-star-o  star" data-index="4"></i>
-                    <i class="fa fa-star-o star " data-index="5"></i>
-                </div>
+                   
             </div>
-            <div id="Offres" class="Offres">
-                
-            </div>
-               
+            <div id="Pagination">
+                    
+            </div> 
         </div>
-        <div id="Pagination">
-                
-        </div> 
+        
 
     </main>
 

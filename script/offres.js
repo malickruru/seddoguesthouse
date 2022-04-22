@@ -1,5 +1,6 @@
 let Pages = [];
 let ratingValue = 3;
+let DetailOffre ={};
 
 
 function CreatePages(Table = [],ItemPerPage){
@@ -38,7 +39,7 @@ function displayPage(index){
     if(Pages.length > 0){
         Pages[index - 1].forEach((item) => {
             document.getElementById("Offres").innerHTML += 
-            `<div class="SliderItem ">
+            `<div class="SliderItem " data-slider="${item.id}">
                 <div class="SliderImg" data-index="3">
             
                 </div>
@@ -58,11 +59,16 @@ function displayPage(index){
                     
                 </div>
                 <button  class="SliderButton">
-                   $ ${item.prix - ((item.prix/100)*40)} 
+                    ${item.prix - ((item.prix/100)*40)} €
                 </button>    
                 </div>
         </div>`;
         }) 
+        document.querySelectorAll(".SliderItem").forEach((slide)=>{
+            slide.addEventListener('click',()=>{
+                document.getElementById("Offres").innerHTML= "Détail de la commande N°"+slide.dataset.slider;
+            })
+        })
     }else{
         document.getElementById("Offres").innerHTML = 'Aucune offre ne correspond à vos critères :(';
     }
@@ -81,7 +87,7 @@ function sortPrice(tab){
             SortedTable.push(item);
         }
     });
-    sortServices(SortedTable)
+    sortServices(SortedTable);
 }
 
 //trier en fonction du service
