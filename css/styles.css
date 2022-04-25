@@ -5,6 +5,7 @@
 @import url('formSection.css');
 @import url('footer.css');
 @import url('booking.css');
+@import url('offresDetail.css');
 
 
 
@@ -82,6 +83,10 @@ main{
 }
 
 /* margin,size, padding ect... */
+.m-0{
+    margin: 0;
+}
+
 .mx-10{
     margin: 0 10px;
 }

@@ -66,7 +66,7 @@ function displayPage(index){
         }) 
         document.querySelectorAll(".SliderItem").forEach((slide)=>{
             slide.addEventListener('click',()=>{
-                document.getElementById("Offres").innerHTML= "Détail de la commande N°"+slide.dataset.slider;
+                showDetail(slide.dataset.slider)
             })
         })
     }else{
@@ -76,6 +76,23 @@ function displayPage(index){
     // console.log(index)
     
 }
+
+
+//redirection lorsqu'on clique sur une carte
+function showDetail(index){
+    //stocker dans le session storage
+    let obj
+    VILLA.forEach((item) => {
+        item.id == index ? obj = item : null 
+    })
+
+    sessionStorage.setItem('SGH-appartement', JSON.stringify(obj));
+
+    //rediriger vers details
+    window.location.href = './offre_detail.html';
+}
+
+
 
 //trier en fonction du prix
 
@@ -115,7 +132,12 @@ function sortRating(tab){
     
     let sortRatingTable = [];
     tab.forEach((item) => {
-        item.note >= ratingValue ? sortRatingTable.push(item) : null;
+        let sum = 0;
+        for(let i = 0; i < item.note.length; i++){
+            sum += item.note[i];
+        }
+        let  moy = sum/item.note.length;
+        moy >= ratingValue ? sortRatingTable.push(item) : null;
         });
     //console.log(sortRatingTable);
     CreatePages(sortRatingTable,6);

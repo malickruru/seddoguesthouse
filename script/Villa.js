@@ -7,7 +7,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 5,
+        note : [5],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -32,7 +32,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 5,
+        note : [5],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -57,7 +57,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3,3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -82,7 +82,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -107,7 +107,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -132,7 +132,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -157,7 +157,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -182,7 +182,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -207,7 +207,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -233,7 +233,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -259,7 +259,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -285,7 +285,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -310,7 +310,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -335,7 +335,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -360,7 +360,7 @@ const VILLA = [
             "bar",
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -385,7 +385,7 @@ const VILLA = [
            
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -410,7 +410,7 @@ const VILLA = [
            
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",
@@ -435,7 +435,7 @@ const VILLA = [
             
             "logement"
         ],
-        note : 3,
+        note : [3],
         nom: "Villa Meublé",
         small_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit.",
         big_description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magnam saepe molestias aliquid enim doloremque, numquam reiciendis laudantium facilis aperiam non voluptatem provident sint? Laborum dignissimos eligendi tenetur illum sit!",

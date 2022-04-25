@@ -24,6 +24,7 @@
     height: 50vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transform: all 0.1s ease-out;
+    cursor: pointer;
 }
 
 .SliderItem:hover{
