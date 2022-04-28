@@ -16,8 +16,148 @@
   .main-bottom { grid-area: main-bottom; }
 
   #meilleurChambre >div > img{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    
   }
 
+  #meilleurChambre >div > div>b,
+  #meilleurChambre >div > div>span,
+  #meilleurChambre >div > div>button{
+    display: block;
+    margin: 5px 0;
+  }
+
+
+  .tab-avis{
+    opacity: 0.7;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .tab-avis-actif{
+    opacity: 1;
+  }
+
+  .userPic{
+    border-radius:50% ;
+    width: 100px;
+  }
+
+  .carte-facture{
+    border-radius: 10px;
+    border:1px gray solid;
+    padding: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  }
+
+  .invisibleBorder{
+    border: none;
+    outline: none;
+  }
+
+  .grid_3{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "grid_3-left grid_3-right"
+      "grid_3-bottom grid_3-bottom"; 
+    justify-content: stretch; 
+    align-content: stretch; 
+    justify-items: stretch; 
+    align-items: stretch; 
+    margin-bottom: 30px;
+  }
+
+  .grid_3>div{
+    padding: 10px;
+    border: 2px gray solid;
+  }
+
+  .grid_3-left {
+     grid-area: grid_3-left;
+     border-top-left-radius: 10px;
+
+     }
+  .grid_3-right { 
+    grid-area: grid_3-right;
+    border-top-right-radius: 10px;
+    border-left:none !important;
+   }
+  .grid_3-bottom { 
+    grid-area: grid_3-bottom;
+    border-top: none !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   }
+
+  tr{
+    height: 25px;
+  }
+  table{
+    width: 100%;
+
+  }
+
+  #bigCarousel{
+    position: relative;
+  }
+
+  #equipment{
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+  }
+
+  #AutreOffres,
+  #avis{
+    flex-wrap:wrap ;
+  }
+
+  #AutreOffres>div,
+  #avis>div{
+    max-width: 30%;
+  }
+
+  #tab-avis{
+    width: 20%;
+  }
+
+  .avis-header{
+    display: flex;
+    align-items: left;
+    justify-content:center ;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+@media screen and (max-width: 768px) {
+  .grid_2 {
+    grid-template-columns: 100% !important;
+    grid-template-rows: auto auto auto !important;
+    grid-template-areas:
+        "main-right"
+        "main-left "
+        "main-bottom " !important;
+    
+  }
   
+  #equipment,#main-slider,#thumbnail-slider{
+    display: none;
+  }
+
+  #AutreOffres>div,
+  #avis>div{
+    max-width: 80%;
+    margin: 10px auto;
+  }
+
+  #tab-avis{
+    width: 60%;
+  }
+}

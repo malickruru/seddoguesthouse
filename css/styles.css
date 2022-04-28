@@ -6,6 +6,7 @@
 @import url('footer.css');
 @import url('booking.css');
 @import url('offresDetail.css');
+@import url('reservation.css');
 
 
 
@@ -43,7 +44,7 @@ a{
 
 
 main{
-    min-height: 200vh;
+    
     background-color: #fff;
     padding: 2em 0;
     display: flex;
@@ -96,6 +97,11 @@ main{
     margin-bottom: 30px;
 }
 
+.my-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .mt-10{
     margin-top: 10px;
 }
@@ -112,6 +118,14 @@ main{
     width: 80%;
 }
 
+.p-20{
+    padding: 20px;
+}
+
+.p-10{
+    padding: 10px;
+}
+
 /* Other */
 
 .separator{
@@ -120,6 +134,14 @@ main{
     width: 1px;
     background-color: rgb(255, 255, 255);
     margin: 0 10px;
+}
+
+.separator-vertical{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #808080;
+    margin: 20px auto;
 }
 
 .logo{
@@ -167,10 +189,10 @@ main{
   .btn-primary{
     background-color: #FF004D;
     color: #fff;
-    padding: 5px 15px ;
+    padding: 10px 15px ;
     border-radius:5px ;
     margin: 0;
-    border: none;
+    border: 1px gray solid;
     cursor: pointer; 
     text-transform: uppercase;
 }
@@ -187,3 +209,5 @@ main{
     stroke: currentColor;
     fill: currentColor;
   }
+
+  

@@ -43,17 +43,26 @@ function splide(){
         type       : 'fade',
         heightRatio: 0.5,
         pagination : false,
-        arrows     : false,
+        arrows     : true,
         cover      : true,
+        classes: {
+          arrows: 'splide__arrows arrows',
+          arrow : 'splide__arrow arrows',
+          prev  : 'splide__arrow--prev owl-prev ',
+          next  : 'splide__arrow--next owl-next',
+        },
       } );
       
       var thumbnails = new Splide( '#thumbnail-slider', {
-        rewind          : true,
-        fixedWidth      : 104,
-        fixedHeight     : 58,
+        padding: { top: 10, bottom: 10 },
+        rewind          : false,
+        fixedWidth      : 200,
+        fixedHeight     : 120,
         isNavigation    : true,
         gap             : 10,
         focus           : 'center',
+        arrows     : false,
+        type   : 'loop',
         pagination      : false,
         cover           : true,
         dragMinThreshold: {
@@ -68,6 +77,9 @@ function splide(){
         },
       } );
       
+      
+     
+
       main.sync( thumbnails );
       main.mount();
       thumbnails.mount();

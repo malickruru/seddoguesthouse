@@ -79,17 +79,20 @@ div[data-index = "3"]{
     padding: 5px 10px;
 }
 
+
 .owl-prev,.owl-next{
     background-color: #fff !important;
-    color: #a54f69  !important;
+    color: #FF004D  !important;
     border: 3px solid #FF004D  !important;
     border-radius: 50%  !important; 
     padding: 5px 10px  !important;
     top: 45%;
     position:absolute;
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
     transition: all 0.3s ease-out;
+    opacity: 1 !important;
+    font-size: 1em;
 }
 
 .owl-next{
@@ -101,8 +104,8 @@ div[data-index = "3"]{
 }
 
 .owl-next:hover,.owl-prev:hover{
-    width: 35px;
-    height: 35px;
+    width: 35px !important;
+    height: 35px !important;
 }
 
 .SliderOfferBut{
@@ -118,5 +121,4 @@ div[data-index = "3"]{
 
 .SliderOfferBut:hover{
     background-color: #ad0235;
-
 }

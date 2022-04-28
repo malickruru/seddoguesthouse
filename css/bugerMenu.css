@@ -47,7 +47,13 @@ align-items: center;
     width: fit-content;
     overflow: hidden;
 } */
-
+#burger{
+  background-color: rgba(0, 0, 0, 0.555);
+      border-radius:50% ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
 
 
 
@@ -55,6 +61,7 @@ align-items: center;
  
     #burger {
       display: block !important;
+      
     }
     
   } 
@@ -76,7 +83,7 @@ align-items: center;
     right: 20px;
     z-index: 1000;
     border: none;
-    background-color: transparent;
+   
     color: white;
     font-size: 2em;
     cursor: pointer;

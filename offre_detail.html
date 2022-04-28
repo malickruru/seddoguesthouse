@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./splide/css/splide.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
     <title>Document</title>
 </head>
 <body>
@@ -56,10 +58,19 @@
 
     <main>
         <div class=" w-80" style="text-align: left;"> Accueil > Nos offres > Villa meublés</div>
-        <div class="w-80 grid_2">
-            <div class="main-left">
+        <div class="w-80 grid_2 mt-30">
+            <div class="main-left p-20">
                 <!-- big carousel -->
-                <section class="splide" aria-label="Splide Basic HTML Example" id="main-slider">
+                <section class="splide my-10" aria-label="Splide Basic HTML Example" id="main-slider">
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev owl-prev" >
+                            <i class='bi bi-caret-left-fill'></i>
+                        </button>
+                        <button class="splide__arrow splide__arrow--next owl-next">
+                            <i class='bi bi-caret-right-fill'></i>
+                        </button>
+                  </div>
+                    
                     <div class="splide__track">
                           <ul class="splide__list" id="bigCarousel">
                               
@@ -69,71 +80,98 @@
                 <!-- small carousel -->
                 <section class="splide" aria-label="Splide Basic HTML Example" id="thumbnail-slider">
                     <div class="splide__track">
-                          <ul class="splide__list" id="smallCarousel">
+                          <ul class="splide__list " id="smallCarousel">
                               
                           </ul>
                     </div>
                   </section>
-                  <img src="./img/equipment.PNG" alt="">
-                  <div id="bigDescription">
-                      
+                  <div id="equipment">
+                    <img src="./img/equipment.PNG" alt=""  >
                   </div>
+                  <div id="bigDescription">
+
+                  </div>
+                  
+
             </div>
-            <div class="main-right">
+            <div class="main-right p-10">
                 <div class="carte-facture flex flex-columnDirection">
-                    <div class="flex-spaceBetween">
+                    <div class="flex-spaceBetween my-10">
                         <div id="PrixMensuel"></div>
                         <div id="Rating"></div>
                     </div>
-                    <div>
-                    <input type="date" id="date-debut">
-                    <input type="date"  id="date-fin">
-                    <input type="number" min="0" max="10" id="NbrVoyageur">
+                    <div class="grid_3">
+                        <div class="grid_3-left">
+                            <b>Arrivée</b><br>
+                            <input type="date" id="date-debut" class="invisibleBorder">
+                        </div>
+                        <div class="grid_3-right">
+                            <b>Départ</b><br>
+                            <input type="date"  id="date-fin" class="invisibleBorder">
+                        </div>
+                        <div class="grid_3-bottom">
+                            <b>Voyageur</b><br>
+                            <input type="number" placeholder="1" min="0" max="10" id="NbrVoyageur" class="invisibleBorder">
+                        </div>
                     </div>
-                    <button class="btn-primary">Réserver</button>
-                    <span style="color:gray; font-size:0.7em;">Vous ne serez pas encore débité</span>
+                    <button class="btn-primary" id="reserver">Réserver</button>
+                    <span style="color:gray; font-size:0.7em; text-align: center;">Vous ne serez pas encore débité</span>
                     <div id="FactureTable">
 
                     </div>
                 </div>
 
-                <div class="mt-30">
+                <div class="my-30">
                     <p>
                         Le petit-déjeuner est servi tous les jours et le restaurant de l'hotel propose un menu varié et moderrne de lundi au samedi. Plusieurs bars, restaurants et magasins sont à moins de 5 minutes.
                     </p>
                 </div>
                 <b>Meilleurs chambres : </b>
                 <div id="meilleurChambre">
-                    <div class="flex">
+                    <div class="flex-spaceBetween my-10">
                         <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                         <div class="flex flex-columnDirection">
                             <b>lorem ipsum</b>
-                            a partir de <b>90€</b> /nuit
+                           <span>a partir de <b>90€</b> /nuit</span> 
                             <button class="btn-primary">Voir plus</button>
                         </div>
                         
                     </div>
-                   <div class="flex">
+                   <div class="flex-spaceBetween my-10">
                         <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-                        <div class="flex flex-columnDirection">
+                        <div class="flex flex-columnDirection ">
                             <b>lorem ipsum</b>
-                            a partir de <b>90€</b> /nuit
+                            <span>a partir de <b>90€</b> /nuit</span> 
                             <button class="btn-primary">Voir plus</button>
                         </div>
                         
                     </div>
-                    <div class="flex">
+                    <div class="flex-spaceBetween my-10">
                         <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-                        <div class="flex flex-columnDirection">
+                        <div class="flex flex-columnDirection ">
                             <b>lorem ipsum</b>
-                            a partir de <b>90€</b> /nuit
+                            <span>a partir de <b>90€</b> /nuit</span> 
                             <button class="btn-primary">Voir plus</button>
                         </div>
                         
                     </div>
                 </div>
                 </div>
-            <div class="main-bottom"></div>
+            <div class="main-bottom">
+                <b >Autres offres : </b>
+                  <div id="AutreOffres" class="flex-spaceAround my-30">
+
+                  </div>
+
+                  <div class="flex-spaceAround my-10" id="tab-avis">
+                    <b class="tab-avis tab-avis-actif" >Avis </b>
+                    <b class="tab-avis">Votre avis </b>
+                    <b class="tab-avis">Note </b>
+                  </div>
+                  <div id="avis" class="flex-spaceBetween my-30">
+                    
+                  </div>
+            </div>
             </div>
            
           
