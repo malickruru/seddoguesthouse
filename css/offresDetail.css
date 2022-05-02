@@ -1,7 +1,7 @@
 .grid_2 {
     display: grid; 
     grid-template-columns: 70% 30%; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-rows: auto auto; 
     gap: 0px 0px; 
     grid-template-areas: 
       "main-left main-right"

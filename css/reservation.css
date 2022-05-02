@@ -1,7 +1,7 @@
 .grid_2 {
     display: grid; 
     grid-template-columns: 70% 30%; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-rows: auto auto; 
     gap: 0px 0px; 
     grid-template-areas: 
       "main-left main-right"
@@ -15,3 +15,46 @@
   .main-right { grid-area: main-right; }
   .main-bottom { grid-area: main-bottom; }
   
+  .reservation-card{
+    background-color: #E6E6E6;
+    padding: 10px;
+  }
+  #date{    
+    margin: 10px 0;
+    justify-content: space-between;
+  }
+
+  #date>div{
+    width: 40%;
+  }
+  #depart,#arrive,#voyageur,#total{
+    background-color: #3A3534;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #total{
+    background-color: black;
+    margin: 10px 0;
+  }
+
+
+  #Demande{
+    width: 95%;
+  }
+
+  .invalid{
+    border-color: red !important;
+  }
+
+  .tab-paiement-active{
+    border-bottom: 1px black solid;
+  }
+  .tab-paiement{
+    text-transform: uppercase;
+    cursor: pointer;
+  }

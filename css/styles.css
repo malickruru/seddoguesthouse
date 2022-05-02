@@ -7,7 +7,7 @@
 @import url('booking.css');
 @import url('offresDetail.css');
 @import url('reservation.css');
-
+@import url('compte.css');
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
@@ -75,6 +75,12 @@ main{
     align-items: center;
 }
 
+.flex-j-end{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
 .flex-columnDirection{
     flex-direction: column;
 }
@@ -116,6 +122,10 @@ main{
 
 .w-80{
     width: 80%;
+}
+
+.half-width{
+    width: 50%;
 }
 
 .p-20{
@@ -162,7 +172,8 @@ main{
 .hoverUnderline{
     position: relative;
     cursor: pointer;
-    padding: 15px 0;
+    padding: 15px 0px;
+   
 }
 
 .hoverUnderline:after {    

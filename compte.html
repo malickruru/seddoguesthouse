@@ -47,7 +47,7 @@
             
             
             <h1 class="pageTitle" id="pageTitle">
-               
+               MON COMPTE
             </h1>
 
             </div>
@@ -56,67 +56,26 @@
        
     </div>
 
-    <main class="bg-compte">
-        <div class=" w-80" style="text-align: left;" id="navigationPath"> Accueil > Réservation</div>
-        <div class="w-80 grid_2">
-            <div class="main-left">
-                <div class="ContactForm" id="ContactForm">
-                    <h2>Ajouter vos informations</h2>
-                    <div class="flex-spaceBetween " >
-                        <input type="text" placeholder="Nom *" id="nom">
-                        <input type="text" placeholder="Prenom *" id="prenom">
-                    </div>
-                    <div class="flex-spaceBetween ">
-                        <input type="text" placeholder="Mail *" id="mail">
-                        <input type="text" placeholder="Téléphone *" id="telephone">
-                    </div>
-                    <div class="flex-spaceBetween ">
-                        <input type="text" placeholder="Adresse *" id="adresse">
-                        <input type="text" placeholder="Ville" id="ville">
-                    </div>
-                    <div class="flex-spaceBetween ">
-                        <input type="text" placeholder="Pays" id="pays">
-                        <input type="text" placeholder="ZIP" id="zip">
-                    </div>
-                    <div >
-                        <textarea  id="Demande" cols="30" rows="30" placeholder="Demande" ></textarea>
-                    </div>
-                    <div class="flex-a-center">
-                        <input type="checkbox" name="" id="confidentialite"  > <p>J'accepte la politique de confidentialité</p>
-                    </div>
-                    <button class="btn-primary" id="valider">Valider</button>
-                   <br> <a href="" style="color: black; text-decoration: line;">déja client ?</a>
-                </div>
+   <main>
+    <div class=" w-80" style="text-align: left;" id="navigationPath"> Accueil > Mon compte</div>
+    <div class="w-80 flex" >
+        <div class="half-width">
+            <ul class="compte-option">
+                <li class="tab-paiement tab-paiement-active"><i class="bi bi-house-door-fill"></i>tableau de bord</li>
+                <li class="tab-paiement"><i class="bi bi-calendar3"></i>reservation</li>
+                <li class="tab-paiement"><i class="bi bi-geo-alt-fill"></i>adresses</li>
+                <li class="tab-paiement"><i class="bi bi-credit-card-2-back"></i>moyens de paiement</li>
+                <li class="tab-paiement"><i class="bi bi-person-circle"></i>détails du compte</li>
+            </ul>
+        </div>
+        <div class="half-width">
+            <div><i class="bi bi-door-open-fill"></i>Déconnecter</div>
+            <div class="compte-card" id="compte-card">
 
-            </div>
-            <div class="main-right">
-                <div class="reservation-card ">
-                    <h2 class="textCenter">VOTRE RESERVATION</h2>
-                    <div id="date" class="flex">
-                        <div id="arrive" >
-
-                        </div>
-                        <div id="depart" >
-    
-                        </div>
-                    </div>
-                    
-                    <div id="voyageur">
-                        <h3>Voyageur</h3>
-                    </div>
-                    <div id="total">
-
-                    </div>
-                    <div class="flex-j-end"><button class="btn-primary" id="modify">Modifier</button></div>
-                </div>
-                <div id="FactureTable">
-                    
-                </div>
             </div>
         </div>
-           
-          
-    </main>
+    </div>
+   </main>
 
       <!-- footer -->
       <footer>
@@ -152,8 +111,7 @@
     
     <script src="./script/gsap.min.js"></script>
     <script src="./script/BurgerMenu.js"></script>
-    <script src="./script/moment.js"></script>
-    <script src="./script/main_reservation.js"></script>
+   <script src="./script/compte.js"></script>
     
 </body>
 </html>
